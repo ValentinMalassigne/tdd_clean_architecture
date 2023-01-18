@@ -12,15 +12,15 @@ import 'package:http/http.dart' as http;
 
 import 'number_trivia_remote_data_source_test.mocks.dart';
 
-class MockHttpClient extends Mock implements http.Client {}
+class TestHttpClient extends Mock implements http.Client {}
 
-@GenerateMocks([MockHttpClient])
+@GenerateMocks([TestHttpClient])
 void main() {
   late NumberTriviaRemoteDataSourceImpl dataSource;
-  late MockMockHttpClient mockHttpClient;
+  late MockTestHttpClient mockHttpClient;
 
   setUp(() {
-    mockHttpClient = MockMockHttpClient();
+    mockHttpClient = MockTestHttpClient();
     dataSource = NumberTriviaRemoteDataSourceImpl(client: mockHttpClient);
   });
 

@@ -44,11 +44,11 @@ class _FakeStreamedResponse_1 extends _i1.SmartFake
         );
 }
 
-/// A class which mocks [MockHttpClient].
+/// A class which mocks [TestHttpClient].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockHttpClient extends _i1.Mock implements _i3.MockHttpClient {
-  MockMockHttpClient() {
+class MockTestHttpClient extends _i1.Mock implements _i3.TestHttpClient {
+  MockTestHttpClient() {
     _i1.throwOnMissingStub(this);
   }
 

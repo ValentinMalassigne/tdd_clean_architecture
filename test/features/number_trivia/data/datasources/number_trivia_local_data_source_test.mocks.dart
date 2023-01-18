@@ -20,12 +20,12 @@ import 'number_trivia_local_data_source_test.dart' as _i2;
 // ignore_for_file: camel_case_types
 // ignore_for_file: subtype_of_sealed_class
 
-/// A class which mocks [MockSharedPreferences].
+/// A class which mocks [TestSharedPreferences].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockSharedPreferences extends _i1.Mock
-    implements _i2.MockSharedPreferences {
-  MockMockSharedPreferences() {
+class MockTestSharedPreferences extends _i1.Mock
+    implements _i2.TestSharedPreferences {
+  MockTestSharedPreferences() {
     _i1.throwOnMissingStub(this);
   }
 

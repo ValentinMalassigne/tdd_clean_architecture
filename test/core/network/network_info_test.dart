@@ -6,16 +6,16 @@ import 'package:tdd_clean_architecture/core/network/network_info.dart';
 
 import 'network_info_test.mocks.dart';
 
-class MockInternetConnectionChecker extends Mock
+class TestInternetConnectionChecker extends Mock
     implements InternetConnectionChecker {}
 
-@GenerateMocks([MockInternetConnectionChecker])
+@GenerateMocks([TestInternetConnectionChecker])
 void main() {
   late NetworkInfoImpl networkInfo;
-  late MockMockInternetConnectionChecker mockInternetConnectionChecker;
+  late MockTestInternetConnectionChecker mockInternetConnectionChecker;
 
   setUp(() {
-    mockInternetConnectionChecker = MockMockInternetConnectionChecker();
+    mockInternetConnectionChecker = MockTestInternetConnectionChecker();
     networkInfo = NetworkInfoImpl(mockInternetConnectionChecker);
   });
 
@@ -26,12 +26,12 @@ void main() {
         //arrange
         final tHasConnectionFuture = Future.value(true);
         when(mockInternetConnectionChecker.hasConnection)
-            .thenAnswer((_) async => tHasConnectionFuture);
+            .thenAnswer((_) => tHasConnectionFuture);
         //act
-        final result = await networkInfo.isConnected;
+        final result = networkInfo.isConnected;
         //assert
         verify(mockInternetConnectionChecker.hasConnection);
-        expect(result, true);
+        expect(result, tHasConnectionFuture);
       },
     );
   });

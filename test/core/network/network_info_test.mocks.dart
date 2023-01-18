@@ -43,12 +43,12 @@ class _FakeAddressCheckResult_1 extends _i1.SmartFake
         );
 }
 
-/// A class which mocks [MockInternetConnectionChecker].
+/// A class which mocks [TestInternetConnectionChecker].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockInternetConnectionChecker extends _i1.Mock
-    implements _i3.MockInternetConnectionChecker {
-  MockMockInternetConnectionChecker() {
+class MockTestInternetConnectionChecker extends _i1.Mock
+    implements _i3.TestInternetConnectionChecker {
+  MockTestInternetConnectionChecker() {
     _i1.throwOnMissingStub(this);
   }
 

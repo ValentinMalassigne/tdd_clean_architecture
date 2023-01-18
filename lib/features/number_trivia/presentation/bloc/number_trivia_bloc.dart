@@ -2,16 +2,13 @@
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
-import 'package:internet_connection_checker/internet_connection_checker.dart';
 import 'package:tdd_clean_architecture/core/usecases/usecase.dart';
 
 import 'package:tdd_clean_architecture/core/utils/input_converter.dart';
 import 'package:tdd_clean_architecture/features/number_trivia/domain/usecases/get_concrete_number_trivia.dart';
 import 'package:tdd_clean_architecture/features/number_trivia/domain/usecases/get_random_number_trivia.dart';
 
-import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
-import '../../../../core/network/network_info.dart';
 import '../../domain/entities/number_trivia.dart';
 
 part 'number_trivia_event.dart';
@@ -81,22 +78,6 @@ class NumberTriviaBloc extends Bloc<NumberTriviaEvent, NumberTriviaState> {
 
       default:
         return 'Unexpected error';
-    }
-  }
-
-  Future<Either<Failure, NumberTrivia>> testGetTrivia() async {
-    if (await InternetConnectionChecker().hasConnection) {
-      try {
-        return Right(NumberTrivia(text: "123 oui", number: 123));
-      } on ServerException {
-        return Left(ServerFailure());
-      }
-    } else {
-      try {
-        return Right(NumberTrivia(text: "123 non", number: 123));
-      } on ServerException {
-        return Left(ServerFailure());
-      }
     }
   }
 }

@@ -9,16 +9,16 @@ import 'package:tdd_clean_architecture/features/number_trivia/domain/usecases/ge
 
 import 'get_concrete_number_trivia_test.mocks.dart';
 
-class MockNumberTriviaRepository extends Mock
+class TestNumberTriviaRepository extends Mock
     implements NumberTriviaRepository {}
 
-@GenerateMocks([MockNumberTriviaRepository])
+@GenerateMocks([TestNumberTriviaRepository])
 void main() {
   late final GetRandomNumberTrivia usecase;
-  late final MockMockNumberTriviaRepository mockNumberTriviaRepository;
+  late final MockTestNumberTriviaRepository mockNumberTriviaRepository;
 
   setUp(() {
-    mockNumberTriviaRepository = MockMockNumberTriviaRepository();
+    mockNumberTriviaRepository = MockTestNumberTriviaRepository();
     usecase = GetRandomNumberTrivia(repository: mockNumberTriviaRepository);
   });
 

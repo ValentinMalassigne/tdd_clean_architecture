@@ -50,12 +50,12 @@ class _FakeEither_1<L, R> extends _i1.SmartFake implements _i3.Either<L, R> {
         );
 }
 
-/// A class which mocks [MockGetConcreteNumberTrivia].
+/// A class which mocks [TestGetConcreteNumberTrivia].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockGetConcreteNumberTrivia extends _i1.Mock
-    implements _i4.MockGetConcreteNumberTrivia {
-  MockMockGetConcreteNumberTrivia() {
+class MockTestGetConcreteNumberTrivia extends _i1.Mock
+    implements _i4.TestGetConcreteNumberTrivia {
+  MockTestGetConcreteNumberTrivia() {
     _i1.throwOnMissingStub(this);
   }
 
@@ -87,12 +87,12 @@ class MockMockGetConcreteNumberTrivia extends _i1.Mock
       ) as _i5.Future<_i3.Either<_i6.Failure, _i7.NumberTrivia>>);
 }
 
-/// A class which mocks [MockGetRandomNumberTrivia].
+/// A class which mocks [TestGetRandomNumberTrivia].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockGetRandomNumberTrivia extends _i1.Mock
-    implements _i4.MockGetRandomNumberTrivia {
-  MockMockGetRandomNumberTrivia() {
+class MockTestGetRandomNumberTrivia extends _i1.Mock
+    implements _i4.TestGetRandomNumberTrivia {
+  MockTestGetRandomNumberTrivia() {
     _i1.throwOnMissingStub(this);
   }
 
@@ -124,12 +124,12 @@ class MockMockGetRandomNumberTrivia extends _i1.Mock
       ) as _i5.Future<_i3.Either<_i6.Failure, _i7.NumberTrivia>>);
 }
 
-/// A class which mocks [MockInputConverter].
+/// A class which mocks [TestInputConverter].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockInputConverter extends _i1.Mock
-    implements _i4.MockInputConverter {
-  MockMockInputConverter() {
+class MockTestInputConverter extends _i1.Mock
+    implements _i4.TestInputConverter {
+  MockTestInputConverter() {
     _i1.throwOnMissingStub(this);
   }
 

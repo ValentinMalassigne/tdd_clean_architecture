@@ -33,12 +33,12 @@ class _FakeNumberTriviaModel_0 extends _i1.SmartFake
         );
 }
 
-/// A class which mocks [MockRemoteDataSource].
+/// A class which mocks [TestRemoteDataSource].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockRemoteDataSource extends _i1.Mock
-    implements _i3.MockRemoteDataSource {
-  MockMockRemoteDataSource() {
+class MockTestRemoteDataSource extends _i1.Mock
+    implements _i3.TestRemoteDataSource {
+  MockTestRemoteDataSource() {
     _i1.throwOnMissingStub(this);
   }
 
@@ -76,12 +76,12 @@ class MockMockRemoteDataSource extends _i1.Mock
       ) as _i4.Future<_i2.NumberTriviaModel>);
 }
 
-/// A class which mocks [MockLocalDataSource].
+/// A class which mocks [TestLocalDataSource].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockLocalDataSource extends _i1.Mock
-    implements _i3.MockLocalDataSource {
-  MockMockLocalDataSource() {
+class MockTestLocalDataSource extends _i1.Mock
+    implements _i3.TestLocalDataSource {
+  MockTestLocalDataSource() {
     _i1.throwOnMissingStub(this);
   }
 
@@ -113,11 +113,11 @@ class MockMockLocalDataSource extends _i1.Mock
       ) as _i4.Future<void>);
 }
 
-/// A class which mocks [MockNetworkInfo].
+/// A class which mocks [TestNetworkInfo].
 ///
 /// See the documentation for Mockito's code generation for more information.
-class MockMockNetworkInfo extends _i1.Mock implements _i3.MockNetworkInfo {
-  MockMockNetworkInfo() {
+class MockTestNetworkInfo extends _i1.Mock implements _i3.TestNetworkInfo {
+  MockTestNetworkInfo() {
     _i1.throwOnMissingStub(this);
   }
 
